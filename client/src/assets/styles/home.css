@@ -1,0 +1,129 @@
+.hero{
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+.hero-MainText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-subtext{
+    padding-top: 60px;
+}
+.hero-bttnWrap{
+    padding-top: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.hero-subtext{
+    text-align: center;
+    /* width: 100%; */
+}
+.hero-MainText h1{
+    font-size: 30vh;
+    line-height: 160px;
+
+    padding-bottom: 20px;
+}
+
+
+.bigStar .start1{
+    width: 400px;
+    position: absolute;
+    right: -100px;
+    top: 60px;
+    transform: rotateZ(-360deg);
+    transition: 2s;
+}
+.bigStar .start2{
+    width: 300px;
+    position: absolute;
+    left: -100px;
+    bottom: 70px;
+    color: black;
+    transform: rotateZ(-360deg);
+    transition: 2s;
+}
+
+.bigStar .starRot:hover{
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+
+
+/* prototype */
+.protoype{
+    padding: 160px 100px 200px;
+}
+.protoypeWrap{
+    display: flex;
+    justify-content: center;
+}
+.prototype-Background{
+    background: var(--color-secondary);
+    height: 500px;
+    width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+.prototype-Mask{
+    background: yellow;
+    bottom:0;
+    position: absolute;
+    height: 700px;
+    width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+    .hero-bttnWrap{
+        display: none;
+    }
+    
+
+    .protoype{
+        padding:80px 0px 100px;
+    }
+    .prototype-Background{
+        height: 300px;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .prototype-Mask{
+        height: 400px;
+        width: 80%;
+    }
+
+    .hero-bttnWrap{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+    .hero{
+        padding: 200px 0 0;
+        /* padding-bottom: 60px; */
+        height: 50vh;
+    }
+    .bigStar .start2{
+        width: 120px;
+        top: 160px;
+        left: -70px;
+    }
+    .bigStar .start1{
+        width: 270px;
+        position: absolute;
+        right: -130px;
+        top: -50px;
+    }
+    .hero-MainText h1{
+        font-size: 13vh;
+        padding-bottom: 20px;
+        line-height: 50px;
+    }
+    .hero-subtext{
+        padding: 30px 40px 0;
+    }
+}
