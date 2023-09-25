@@ -71,12 +71,20 @@
     border-radius: 30px;
 }
 .prototype-Mask{
-    background: yellow;
     bottom:0;
     position: absolute;
-    height: 700px;
+    height: 800px;
     width: 60%;
+    /* overflow: hidden; */
 }
+
+
+
+.iphone{
+    background: pink;
+}
+
+
 
 @media screen and (max-width: 600px) {
     .hero-bttnWrap{

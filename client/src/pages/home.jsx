@@ -6,6 +6,8 @@ import propStar from '../assets/icons/propella Star.svg'
 import bluePropStar from '../assets/icons/bluePropStar.svg'
 import { Link } from 'react-router-dom'
 
+
+import iPhone from '../assets/images/iPhone.png'
 export default function Home() {
     return (
         <>
@@ -36,7 +38,9 @@ export default function Home() {
             <section className="protoype">
                 <div className="protoypeWrap">
                     <div className="prototype-Background">
-                        <div className="prototype-Mask"></div>
+                        <div className="prototype-Mask">
+                                <img src={iPhone} alt="" />
+                        </div>
                     </div>
                 </div>
             </section>
