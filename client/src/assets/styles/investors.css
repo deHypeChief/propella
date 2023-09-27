@@ -1,0 +1,13 @@
+.investors{
+    height: 100vh;
+    padding: 0;
+}
+.investwrap{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}

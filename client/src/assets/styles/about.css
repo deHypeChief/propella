@@ -14,7 +14,7 @@
 
 .introText{
     padding-top: 120px;
-    padding-left: 150px;
+    padding-left: 0px;
 
 }
 .introText h1{
@@ -35,7 +35,7 @@
     height: 90%;
     position: absolute;
     width: 53vw;
-    right: 0;
+    right:-153px ;
     border-radius: 50px 0 0 50px;
 }
 
@@ -92,7 +92,6 @@
 .box1{
     grid-area: box1;
     height: 200px;
-    width: 45w;
     padding: 70px;
 
 }
@@ -296,12 +295,8 @@
         flex-direction: column;
     }
 
-    .culture-gridbox > div{
-        width: 100%;
-    }
-
     .introText {
-        padding-top: 120px;
+        padding-top: 100px;
         padding-left: 40px;
     }
     .spoil-Text{
@@ -315,8 +310,46 @@
         font-size: 2.5rem;
         line-height: initial;
     }
-
-
+    .box1{
+        grid-area: box1;
+        height: 90px;
+        /* width: 100%; */
+        padding: 70px;
+    
+    }
+    .box3 {
+        width: 100%;
+        grid-area: box3;
+        /* width: 28vw; */
+    }
+    .boxTextInspire {
+        padding: 44px;
+    }
+    .introText p {
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    .introText h1 {
+        width: 100%;
+    }
+    .introText {
+        padding-top: 75px;
+        padding-left: 0;
+    }
+    .spoil-Text{
+        display: flex;
+        flex-direction: column;
+    }
+    .culture-intro p {
+        text-align: center;
+        padding-top: 50px;
+        width: 100%;
+    }
+    .spoil-Text p {
+        width: 100%;
+        padding-top: 27px;
+        margin-left: 0px;
+    }
 
     .intro-wrap{
         display: flex;
@@ -326,11 +359,100 @@
     .intro-imgBox{
         z-index: 0;
         background: rgba(255, 255, 165, 0.463);
-        height: 90%;
-        position: initial;
-        width: 53vw;
-        right: 0;
+        height: 30%;
+        /* position: initial; */
+        width: 90%;
+        right: 0px;
         border-radius: 50px 0 0 50px;
     }
-    
+    .slide-text h1 {
+        font-size: 2.7rem;
+    }
+    .slide-text {
+        padding: 50px 30px;
+    }
+    .culture {
+        padding-top: 46px;
+        padding-bottom: 95px;
+    }
+    .spoil-slides {
+        margin-top: 50px;
+    }
+    .faqlist li {
+        border-radius: 0px;
+        width: 100%;
+    }
+    .faqs {
+        padding: 100px 0 85px;
+    }
+
+    .slide {
+        height: 370px;
+        /* background: pink; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .spoilWrap {
+        height: 70vh;
+    }
+    .slide-imgWrap {
+        width: 100%;
+    }
+
+
+
+
+    #spoil1{
+        background: red;
+        height: 100%;
+        width: 100%;
+
+    }
+    #spoil2{
+        background: blue;
+        width: 100%;
+        height: 100%;
+    }
+    #spoil3{
+        background: yellow;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .spoilWrap {
+        position: initial;
+        height: fit-content;
+    }
+    #slide1, #slide2, #slide3{
+        padding-top: 30px;
+    }
+    #slide1{
+        position: initial;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+    }
+    #slide2{
+        position: initial;
+        top: 80px;
+        width: 100%;
+        z-index: 9;
+    }
+    #slide3{
+        position: initial;
+        top: 160px;
+        width: 100%;
+        z-index: 8;
+    }
+
+    .box4 {
+        display: none;
+    }
+
+    .introImg {
+        width: fit-content;
+        height: 300px;
+    }
 }

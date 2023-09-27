@@ -13,6 +13,10 @@ button{
     background: var(--color-primary);
 
 }
+.primary-bttn{
+    background: black;
+
+}
 
 @media screen and (max-width: 600px) {
 

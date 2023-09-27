@@ -1,0 +1,102 @@
+.roadmap-Page{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.roadmap-textArea{
+    margin: 100px 10px 0;
+
+}
+.roadmap-WrapText{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.roadmap-BttnWrap{
+    padding-top: 50px;
+}
+.subtext-simLayout p{
+    padding-top: 140px;
+    width: 500px;
+}
+
+.roadmap--boximg{
+    background: rgb(0, 0, 0);
+    border-radius: 30px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.roadmap-Text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    top: 0;
+    background: rgba(0, 0, 0, 0.212);
+    color: white;
+}
+.roadmap-TextWrap{
+    padding: 70px;
+}
+.textFact{
+    padding-bottom: 15px;
+    color: var(--color-primary);
+}
+
+.bigStar-roadmap- .starRot:hover{
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+
+.bigStar-roadmap- .start1-roadmap-{
+    width: 450px;
+    position: absolute;
+    right: -60px;
+    top: 400px;
+    transform: rotateZ(-360deg);
+    transition: 2s;
+    z-index: 2;
+}
+
+.btext-wrap{
+    text-align: center;
+    padding: 190px 50px;
+}
+
+@media screen and (max-width:600px) {
+    .roadmap-WrapText {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .subtext-simLayout p {
+        padding-top: 40px;
+        width: 100%;
+    }
+    .extras{
+        display: none;
+    }
+    .roadmap--boximg {
+        height: 344px;
+        margin-top: 30px;
+    }
+    .roadmap-textArea {
+        margin: 54px 10px 0;
+    }
+    .roadmap-TextWrap {
+        padding: 50px 30px;
+    }
+    .roadmap-TextWrap p{
+        text-align: initial;
+        
+    }
+    .btext-wrap {
+        padding: 8px 0;
+    }
+    .roadmap-Page {
+        padding-top: 140px;
+        padding-bottom: 60px;
+    }
+}

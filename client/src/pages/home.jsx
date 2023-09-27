@@ -5,12 +5,16 @@ import Footer from '../components/footer/footer'
 import propStar from '../assets/icons/propella Star.svg'
 import bluePropStar from '../assets/icons/bluePropStar.svg'
 import { Link } from 'react-router-dom'
+import { HomeNav } from '../components/navbar/navbar'
+
 
 
 import iPhone from '../assets/images/iPhone.png'
 export default function Home() {
     return (
         <>
+            <HomeNav/>
+
             <section className="hero">
                 <div className="extras">
                     <div className="bigStar">
@@ -27,9 +31,18 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="hero-bttnWrap">
-                        <Link to='/about'><Button className='secondary-bttn'>About Us</Button></Link>
-                        <Button className='secondary-bttn'>Investors</Button>
+
+                        <Link to='/about'>
+                            <Button className='secondary-bttn'>About Us</Button>
+                        </Link>
+
+                        <Link to='/investors'>
+                            <Button className='secondary-bttn'>Investors</Button>
+                        </Link>
+                        
+                        <Link to={'/roadmap'}>
                         <Button className='secondary-bttn'>Roadmap</Button>
+                        </Link>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,98 @@
+.desk-Logo--light{
+    width: 200px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.253);
+    backdrop-filter: blur(40px);
+}
+.navWrap{
+    padding: 35px 120px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navList{
+    display: flex;
+    gap: 30px;
+}
+a:hover{
+    color: var(--color-primary);
+}
+.mobile-logo{
+    display: none;
+}
+.mobileHam{
+    display: none;
+}
+.hamlist{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .mobileHam{
+        display: block;
+    }
+    .mobile-logo{
+        display: block;
+        width: 40px;
+    }
+    .navList{
+        display: none;
+    }
+    .desk-Logo--light, .desk-Logo--dark{
+        display: none;
+    }
+    .navWrap {
+        padding: 35px 30px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navBttn{
+        display: none;
+    }
+    .authPage {
+        padding-top: 89px;
+        padding-bottom: 140px;
+    }
+    .hamBox{
+        height: 38px;
+        width: 38px;
+        background: black;
+    }
+    .hamBox-close{
+        height: 38px;
+        width: 38px;
+        background: red;
+        display: none;
+    }
+    .hamlist{
+        height: 50vh;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+        display: none;
+
+
+        /* change */
+        background: white; 
+    }
+    .hamlist{
+        padding: 160px 60px 0;
+    }
+    .hamlist li p{
+        padding-bottom: 30px;
+        font-family: subText-Bold;
+        font-size: 30px;
+    }
+    .hamBttn{
+        padding-top: 60px;
+    }
+}

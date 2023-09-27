@@ -4,11 +4,15 @@ import mainLogo from '../assets/icons/logo-main.svg'
 import propStar from '../assets/icons/propella Star.svg'
 import Button from "../components/button/button";
 import Footer from '../components/footer/footer';
+import { OtherNav } from '../components/navbar/navbar';
 
 export default function About() {
     return (
         <>
-            <div className="intro">
+
+            <OtherNav/>
+
+            <section className="intro">
                 <div className="bigStar">
                     <img className='intro-start1 starRot' src={propStar} alt="" />
                 </div>
@@ -31,7 +35,7 @@ export default function About() {
                         <div className="intro-imgBox"></div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <section className="culture">
                 <div className="culture-intro">
