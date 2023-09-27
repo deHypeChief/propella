@@ -3,7 +3,7 @@ export default function Button(props){
     const {children} = props
 
     return (
-        <button className={props.className}>
+        <button onClick={props.action} className={props.className}>
             {children}
         </button>
     )

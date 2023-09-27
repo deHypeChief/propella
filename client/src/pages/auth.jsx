@@ -3,6 +3,8 @@ import Footer from "../components/footer/footer";
 import { OtherNav } from "../components/navbar/navbar";
 import '../assets/styles/auth.css'
 import propStar from '../assets/icons/propella Star.svg'
+import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Auth() {
     return (
@@ -46,9 +48,11 @@ export default function Auth() {
                                     Let's <br /> get you up <br /> to speed
                                 </h1>
                                 <div className="authBttnWrap">
+                                    <Link to='/onboarding/signup'>
                                     <Button className='secondary-bttn'>
                                         Get started
                                     </Button>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -61,8 +65,8 @@ export default function Auth() {
                     </div>
                 </div>
             </section>
-
             <Footer />
         </>
     )
 }
+

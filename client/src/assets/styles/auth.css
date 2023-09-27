@@ -61,7 +61,103 @@
     z-index: 2;
 }
 
+
+
+
+/* Auth Popup */
+.sign{
+    height: 100vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 8;
+}
+.authSpot{
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width: 900px;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.205);
+}
+.authFormSec{
+    padding: 20px 60px 40px 40px;
+    margin: 40px 0;
+    width: 800px;
+    overflow-y: scroll;
+}
+.authFormSec::-webkit-scrollbar{
+    display: none;
+}
+.imgSec{
+    width: 100%;
+    background: black;
+}
+.formtext h1{
+    font-size: 40px;
+    line-height: initial;
+}
+.formtext p{
+    font-size: 20px;
+    line-height: initial;
+}
+.authclose{
+    height: 28px;
+    width: 28px;
+    background: black;
+    border-radius: 10000px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.authForm{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.formInfo p{
+    font-size: 15px;
+    color: var(--color-primary);
+}
+.formInput{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.formInput input{
+    padding: 8px 18px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 140px;
+}
+
+
+
+
+
+
 @media screen and (max-width:600px) {
+    .formInput input{
+        padding: 8px 18px;
+        font-size: 18px;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 8px;
+        width: 100%;
+    }
     .authWrapText {
         flex-direction: column;
         gap: 0px;
@@ -86,5 +182,21 @@
     .authTextWrap p{
         text-align: initial;
         
+    }
+    .imgSec {
+        display: none;
+    }
+    .authSpot {
+        background: red;
+        height: 80vh;
+        width: 100%;
+        background: white;
+        border-radius: 0;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0);
+    }
+    .authFormSec {
+        padding: 56px 38px;
+        width: 100%;
+        overflow-y: scroll;
     }
 }
