@@ -2,7 +2,7 @@ import Button from '../button/button'
 import './styles.css'
 
 import logoLight_desk from '../../assets/icons/Logo-light.svg'
-import logoLDark_desk from '../../assets/icons/Logo-Dark.svg'
+import logoLDark_desk from '../../assets/icons/logo-Dark.svg'
 import logo_mobile from '../../assets/icons/Logo-main.svg'
 import { Link } from 'react-router-dom'
 import { useRef, useState } from 'react'
