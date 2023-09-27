@@ -44,6 +44,7 @@
 .textFact{
     padding-bottom: 15px;
     color: var(--color-primary);
+    font-weight: 900;
 }
 
 .bigStar-roadmap- .starRot:hover{
@@ -64,6 +65,13 @@
 .btext-wrap{
     text-align: center;
     padding: 190px 50px;
+}
+
+.auttTopImg{
+    background: url(https://images.unsplash.com/photo-1521151716396-b2da27b1a19f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80);
+    height: 100%;
+    background-size: cover;
+    background-position-y: -80vh;
 }
 
 @media screen and (max-width:600px) {

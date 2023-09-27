@@ -31,12 +31,13 @@
 }
 .intro-imgBox{
     z-index: -1;
-    background: rgba(255, 255, 165, 0.463);
+    background: url(https://images.unsplash.com/photo-1615572359976-1fe39507ed7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
     height: 90%;
     position: absolute;
     width: 53vw;
     right:-153px ;
     border-radius: 50px 0 0 50px;
+    background-size: cover;
 }
 
 .bigStar .intro-start1{
@@ -89,10 +90,12 @@
     background: black;
 }
 
-.box1{
+.culture-gridbox .box1{
     grid-area: box1;
     height: 200px;
     padding: 70px;
+    background: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2050&q=80);
+    background-size: cover;
 
 }
 .box1 > h1{

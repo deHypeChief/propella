@@ -5,6 +5,11 @@ footer{
 }
 .footer-Top{
     padding: 100px 0 160px;
+    position: relative;
+}
+
+.footerTop-text{
+    z-index: 6;
 }
 .footerText{
     width: 800px;

@@ -44,6 +44,7 @@
 .textFact{
     padding-bottom: 15px;
     color: var(--color-primary);
+    font-weight: 900;
 }
 
 .bigStar-auth .starRot:hover{
@@ -62,7 +63,12 @@
 }
 
 
-
+.auttTopImg-auth{
+    background: url(https://images.unsplash.com/photo-1579880651719-3cef00eae7de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+    height: 100%;
+    background-size: cover;
+    background-position-y: -30vh;
+}
 
 /* Auth Popup */
 .sign{

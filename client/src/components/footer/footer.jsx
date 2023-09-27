@@ -6,18 +6,22 @@ export default function Footer() {
         <footer>
             <div className="footer-Top">
                 <div className="footerTop-img">
-                    <img src="" alt="" />
+
                 </div>
-                <div className="footerTop-text">
-                    <h1 className="footerText-desktop">
-                        The Future <br /> Of E-commerce
-                    </h1>
-                    <h1 className="footerText-mobile">
-                        The <br /> Future Of  <br />E-commerce
-                    </h1>
-                </div>
-                <div className="footerTop-bttn">
-                    <Button className="secondary-bttn">Work with us</Button>
+
+
+                <div className="footTextSec">
+                    <div className="footerTop-text">
+                        <h1 className="footerText-desktop">
+                            The Future <br /> Of E-commerce
+                        </h1>
+                        <h1 className="footerText-mobile">
+                            The <br /> Future Of  <br />E-commerce
+                        </h1>
+                    </div>
+                    <div className="footerTop-bttn">
+                        <Button className="secondary-bttn">Work with us</Button>
+                    </div>
                 </div>
             </div>
 

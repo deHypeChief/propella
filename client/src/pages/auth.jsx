@@ -24,7 +24,7 @@ export default function Auth() {
                 <div className="authWrap">
 
                     <div className="auth-boximg">
-                        <div className="auttTopImg">
+                        <div className="auttTopImg-auth">
                             <img src="" alt="" />
                         </div>
 
