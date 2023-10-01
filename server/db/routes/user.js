@@ -3,12 +3,11 @@ import express from 'express';
 
 const router = express.Router();
 
-// Import the user controller
-import { createUser } from '../controllers/userController.js';
+import { createUser, getCategory, signUser } from '../controllers/userController.js';
 
-// Define a route for creating a user
 router.post('/create', createUser);
+router.get('/categories', getCategory)
+router.post('/login', signUser)
 
-// Define other routes as needed (e.g., read, update, delete)
 
 export default router;

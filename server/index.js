@@ -8,21 +8,26 @@ dotenv.config()
 
 
 const app = express();
-const db_Url = process.env.DB_URL
 const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
-app.use(cors());
+const DB_URL = process.env.NODE_ENV === 'pro' ? process.env.DB_URL : process.env.DB_LOCAL
 
 
-// Connect to MongoDB (replace 'your-mongodb-uri' with your MongoDB connection URI)
-connect(db_Url, { useNewUrlParser: true, useUnifiedTopology: true })
+
+
+connect(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.error(err));
 
 
+
 // Define your routes here
+app.use(express.urlencoded({extended:false}))
+app.use(express.json());
+
 app.use('/api/users', userRoute);
+
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
