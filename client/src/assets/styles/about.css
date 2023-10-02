@@ -458,4 +458,7 @@
         width: fit-content;
         height: 300px;
     }
+    .culture-gridbox .box1 {
+        height: 77px;
+    }
 }
