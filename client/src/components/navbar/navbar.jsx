@@ -7,6 +7,8 @@ import logo_mobile from '../../assets/icons/logo-main.svg'
 import { Link } from 'react-router-dom'
 import { useRef, useState } from 'react'
 
+import Menu from '../../assets/icons/Menu.png'
+
 
 export function HomeNav() {
     const [open, setOpen] = useState(false)
@@ -57,11 +59,11 @@ export function HomeNav() {
                     </div>
                     <div className="mobileHam">
                         <div ref={bttnOpen} className="hamBox" onClick={OpenMenu}>
-
+                            <img src={Menu} alt="" />
                         </div>
 
                         <div ref={bttnClose} className="hamBox-close" onClick={CloseMenu}>
-
+                        <img src={Menu} alt="" />
                         </div>
                     </div>
                 </div>
@@ -160,10 +162,12 @@ export function OtherNav() {
 
                     <div className="mobileHam">
                         <div ref={bttnOpen} className="hamBox" onClick={OpenMenu}>
+                        <img src={Menu} alt="" />
 
                         </div>
 
                         <div ref={bttnClose} className="hamBox-close" onClick={CloseMenu}>
+                        <img src={Menu} alt="" />
 
                         </div>
                     </div>
