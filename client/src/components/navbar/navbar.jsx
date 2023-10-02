@@ -51,7 +51,7 @@ export function HomeNav() {
                         </div>
                     </Link>
                     <div className="navBttn">
-                        <Link to={'/onbording'}>
+                        <Link to={'/onboarding'}>
                             <Button className='primary-bttn'>Become a Vendor</Button>
                         </Link>
                     </div>

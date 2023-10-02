@@ -1,15 +1,21 @@
+import { useEffect } from "react";
 import Button from "../../components/button/button";
 import { OtherNav } from "../../components/navbar/navbar";
+import { getCategory } from "../../utils/authForm";
 
-export default function SignPage(){
-    return(
+export default function SignPage() {
+    useEffect(()=>{
+        getCategory()
+    }, [])
+
+    return (
         <>
 
-<OtherNav/>
+            <OtherNav />
             <div className="sign">
                 <div className="signWrap">
 
-                    <div className="authSpot">                          
+                    <div className="authSpot">
                         <div className="imgSec">
 
                         </div>
@@ -25,18 +31,18 @@ export default function SignPage(){
                                     <div className="formInfo">
                                         <p>Personal Info</p>
                                         <div className="formInput">
-                                            <input type="text" name="" id="" placeholder="First Name"/>
-                                            <input type="text" name="" id="" placeholder="Last Name"/>
-                                            <input type="text" name="" id="" placeholder="Age"/>
+                                            <input type="text" name="" id="" placeholder="First Name" />
+                                            <input type="text" name="" id="" placeholder="Last Name" />
+                                            <input type="text" name="" id="" placeholder="Age" />
                                         </div>
                                     </div>
 
                                     <div className="formInfo">
                                         <p>Personal Info</p>
                                         <div className="formInput">
-                                            <input type="text" name="" id="" placeholder="First Name"/>
-                                            <input type="text" name="" id="" placeholder="Last Name"/>
-                                            <input type="text" name="" id="" placeholder="Age"/>
+                                            <input type="text" name="" id="" placeholder="First Name" />
+                                            <input type="text" name="" id="" placeholder="Last Name" />
+                                            <input type="text" name="" id="" placeholder="Age" />
                                         </div>
                                     </div>
 
