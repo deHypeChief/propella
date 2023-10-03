@@ -71,7 +71,9 @@ button{
     transform: rotateZ(360deg);
     transition: 2s;
 }
-
+option{
+    border: none;
+}
 
 @media screen and (max-width: 600px) {
     section {

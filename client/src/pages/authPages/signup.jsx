@@ -1,9 +1,45 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Button from "../../components/button/button";
 import { OtherNav } from "../../components/navbar/navbar";
-import { getCategory } from "../../utils/authForm";
+import { createUsers, getCategory } from "../../utils/authForm";
+
 
 export default function SignPage() {
+    const [categories, setCategories] = useState(['loading'])
+
+    const [userData, setUserData] = useState({
+        name: 'bing',
+        email: '',
+        username: '',
+        password: '',
+        confirmPassword: '',
+        bussinessName: '',
+        shopNumber: '',
+        category: 'select Type',
+    })
+    const [userInfo, setInfo] = useState({})
+
+    console.log(userData);
+
+    useEffect(()=>{
+        getCategory(setCategories)
+    }, [])
+
+    const handelChange = (e)=>{
+        const  {name, value} = e.target
+        setUserData(
+            (prevFormData)=>({...prevFormData, [name]: value})
+        )
+    }
+
+    function handleSubmit(event){
+        event.preventDefault()
+
+        createUsers(userData, setInfo)
+        console.log(userInfo);
+    }
+
+    console.log(categories);
 
     return (
         <>
@@ -24,28 +60,43 @@ export default function SignPage() {
                                 </p>
                             </div>
                             <div className="formwrap">
-                                <form className="authForm">
+                                <form className="authForm" onSubmit={handleSubmit}>
                                     <div className="formInfo">
                                         <p>Personal Info</p>
                                         <div className="formInput">
-                                            <input type="text" name="" id="" placeholder="First Name" />
-                                            <input type="text" name="" id="" placeholder="Last Name" />
-                                            <input type="text" name="" id="" placeholder="Age" />
+                                            <input type="text" onChange={handelChange} name="name" id="name" placeholder="Full Name" value={userData.name}  required/>
+
+                                            <input type="text" name="bussinessName" onChange={handelChange} value={userData.bussinessName}  id="bussinessName" placeholder="Bussiness Name" required />
+
+                                            <input type="text" name="shopNumber" onChange={handelChange} value={userData.shopNumber}   id="shopNumber" placeholder="Shop Number"  required/>
+
+                                            <select name="category" value={userData.category} required onChange={handelChange}  id="">
+                                                {
+                                                    categories.map((items, index)=>{
+                                                        return(
+                                                            <option value={items} key={`${items}${index}`}>{items}</option>
+                                                        )
+                                                    })
+                                                }
+                                            </select>
                                         </div>
                                     </div>
 
                                     <div className="formInfo">
-                                        <p>Personal Info</p>
+                                        <p>Work Info</p>
                                         <div className="formInput">
-                                            <input type="text" name="" id="" placeholder="First Name" />
-                                            <input type="text" name="" id="" placeholder="Last Name" />
-                                            <input type="text" name="" id="" placeholder="Age" />
+                                            <input type="text" name="username" value={userData.username} id="username" onChange={handelChange}  placeholder="Username" required />
+
+                                            <input type="email" name="email" id="email" value={userData.email} onChange={handelChange}  placeholder="Email" required />
+                                            
+                                            <input type="password" name="password" value={userData.password} onChange={handelChange}  id="password" placeholder="Password" required />
+                                            
+                                            <input type="password" value={userData.confirmPassword} name="confirmPassword" onChange={handelChange}  id="confirmPassword" required placeholder="Confirm Password" />
+
                                         </div>
                                     </div>
-
-
                                     <div className="formSubimt">
-                                        <Button className='secondary-bttn'>
+                                        <Button submit={handleSubmit} className='secondary-bttn' >
                                             Sign Up
                                         </Button>
                                     </div>
@@ -59,3 +110,4 @@ export default function SignPage() {
         </>
     )
 }
+

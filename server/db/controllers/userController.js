@@ -30,7 +30,8 @@ const createUser = async (req, res) => {
 
 
 				const saltRounds = 10
-				const hashedPassword = await bcrypt.hash(password, saltRounds)
+				const salt = await bcrypt.genSalt(saltRounds);
+				const hashedPassword = await bcrypt.hash(password, salt);
 
 				const user = new User({
 					username,
@@ -39,7 +40,8 @@ const createUser = async (req, res) => {
 					name,
 					bussinessName,
 					shopNumber,
-					category
+					
+					
 				});
 
 				if (user) {

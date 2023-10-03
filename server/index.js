@@ -22,9 +22,9 @@ connect(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
 // Define your routes here
+app.use(cors())
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
-app.use(cors)
 app.use('/api/users', userRoute);
 
 
