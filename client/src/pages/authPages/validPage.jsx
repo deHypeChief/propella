@@ -6,12 +6,15 @@ export default function ValidPage(){
     return(
          <>
             <OtherNav/>
-        <section>
+        <section className="valid-section">
             <h1>
                 Hello, <br />
                 Your account has being created
-                <Link to={'/'}><Button className='secondary-bttn'>Go Home</Button></Link>
+                
             </h1>
+            <br />
+            <br />
+            <Link to={'/'}><Button className='secondary-bttn'>Go Home</Button></Link>
         </section>
         </>
     )
