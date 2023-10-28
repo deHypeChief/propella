@@ -36,31 +36,25 @@ connectToMongoDB();
 
 const PORT = process.env.PORT || 3000;
 
-const corsOptions = {
-  origin: 'https://site-propella.vercel.app',
-  methods: 'GET,POST',
-  allowedHeaders: 'Content-Type,Authorization', 
-  preflightContinue: true,
-};
-
-app.use(cors(corsOptions))
-
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://site-propella.vercel.app");
-  res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.header('Access-Control-Allow-Origin', 'https://site-propella.vercel.app');
   next();
-})
+});
+
+app.use(cors({
+  origin: 'https://site-propella.vercel.app',
+  allowedHeaders: 'Content-Type,Authorization', 
+}))
 
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
+
+
 
 app.get('/', (req, res) => {
   res.send('Server is up and running')
 })
 app.use('/api/users', userRoute);
-
-
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
