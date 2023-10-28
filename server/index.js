@@ -25,6 +25,10 @@ connect(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
 app.use(cors())
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.send('Server is up and running')
+})
 app.use('/api/users', userRoute);
 
 
