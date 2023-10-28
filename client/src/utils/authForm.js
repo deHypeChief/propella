@@ -13,7 +13,7 @@ export async function getCategory(callback){
     try {
         const fetchData = await axios.get(API_URI, {
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded'
         },
     })
 
@@ -29,10 +29,11 @@ export async function createUsers(data, callback, callbackErr){
     try {
         const fetchData = await axios.post(API_URI, userData, {
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded'
         },
     })
         alert(`${fetchData.name} \n You have been added to the waitlist`)
+
         return callback(fetchData)
     } catch (error) {
         return callbackErr(error)
