@@ -5,15 +5,10 @@ import cors from 'cors'
 
 import userRoute from './db/routes/user.js';
 dotenv.config()
-
-
 const app = express();
 
 const DB_URL = process.env.NODE_ENV === 'production' ? process.env.DB_URL : process.env.DB_LOCAL
 
-
-
-// Function to establish MongoDB connection
 const connectToMongoDB = () => {
   mongoose.connect(DB_URL, {
     useNewUrlParser: true,
@@ -35,6 +30,12 @@ const connectToMongoDB = () => {
 connectToMongoDB();
 
 const PORT = process.env.PORT || 3000;
+
+app.use(cors(
+  {
+    origin: ["https://site-propella.vercel.app/", "http://example.net"],
+  }
+));
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 
