@@ -23,6 +23,7 @@ export default function Footer() {
                         <Button className="secondary-bttn">Work with us</Button>
                     </div>
                 </div>
+                
             </div>
 
             <div className="footer-Buttom">
@@ -38,23 +39,23 @@ export default function Footer() {
                             </p>
                             <div className="footer-quickLinks">
                                 <li>
-                                    <Link>About Us</Link>
+                                    <Link to={'/about'}>About Us</Link>
                                 </li>
                                 <li>
-                                    <Link>Investor</Link>
+                                    <Link to={'/investors'}>Investor</Link>
                                 </li>
                                 <li>
-                                    <Link>Roadmap</Link>
+                                    <Link to={'/roadmap'}>Roadmap</Link>
                                 </li>
                                 <li>
-                                    <Link>Get Started</Link>
+                                    <Link to={'/onboarding'}>Get Started</Link>
                                 </li>
                             </div>
                         </div>
 
                         <div className="footer-link-social">
                             <p className="footer-smalltext">
-                                Quick Links
+                                Our Contacts
                             </p>
                             <div className="footer-contacts">
                                 <p>Big Apple Turn 22 str, London</p>

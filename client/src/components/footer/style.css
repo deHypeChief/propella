@@ -1,13 +1,19 @@
 footer{
     background: black;
-    padding: 100px 140px;
     color: white;
 }
 .footer-Top{
-    padding: 100px 0 160px;
     position: relative;
+    background: url(../../assets/images/footerImg.png);
+    background-size: cover;
+    padding: 200px 140px 160px;
+    background-position-x: 50px;
+    background-repeat: no-repeat;
+    
 }
-
+.footer-Buttom{
+    padding: 100px 140px 160px;
+}
 .footerTop-text{
     z-index: 6;
 }
@@ -49,8 +55,9 @@ footer{
     font-weight: 800;
     font-family: subText-Bold;
 }
-
-
+.footTextSec{
+    z-index: 1;
+}
 
 @media screen and (max-width: 600px) {
     .footer-quickLinks{
@@ -59,8 +66,17 @@ footer{
     }
     footer{
         background: black;
-        padding: 30px 40px 100px;
         color: white;
+    }
+    .footer-Top{
+        padding: 140px 40px 100px;
+        background-position-x: -300px;
+        background-position-y: 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .footer-Buttom{
+        padding: 30px 40px 100px;
     }
     .footer-link{
         flex-direction: column;

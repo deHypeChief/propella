@@ -75,7 +75,7 @@ export function HomeNav() {
                     <li>
                         <Link to={'/about'}>
                             <p>About</p>
-                        </Link>
+                        </Link>``
                     </li>
                     <li>
                         <Link to={'/investors'}>

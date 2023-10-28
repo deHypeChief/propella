@@ -8,7 +8,7 @@ export default function SignPage() {
     const [categories, setCategories] = useState(['loading'])
 
     const [userData, setUserData] = useState({
-        name: 'bing',
+        name: '',
         email: '',
         username: '',
         password: '',
@@ -17,7 +17,8 @@ export default function SignPage() {
         shopNumber: '',
         category: 'select Type',
     })
-    const [userInfo, setInfo] = useState({})
+    const [userInfoErr, setInfoErr] = useState(null)
+    const [userInfo, setInfo] = useState(null)
 
     console.log(userData);
 
@@ -35,11 +36,11 @@ export default function SignPage() {
     function handleSubmit(event){
         event.preventDefault()
 
-        createUsers(userData, setInfo)
+        createUsers(userData, setInfo, setInfoErr)
         console.log(userInfo);
     }
 
-    console.log(categories);
+    // console.log(categories);
 
     return (
         <>
@@ -58,9 +59,10 @@ export default function SignPage() {
                                 <p>
                                     Fill in your details to get started
                                 </p>
+                                
                             </div>
                             <div className="formwrap">
-                                <form className="authForm" onSubmit={handleSubmit}>
+                                <form className="authForm" autoComplete="off" onSubmit={handleSubmit}>
                                     <div className="formInfo">
                                         <p>Personal Info</p>
                                         <div className="formInput">
@@ -70,7 +72,8 @@ export default function SignPage() {
 
                                             <input type="text" name="shopNumber" onChange={handelChange} value={userData.shopNumber}   id="shopNumber" placeholder="Shop Number"  required/>
 
-                                            <select name="category" value={userData.category} required onChange={handelChange}  id="">
+                                            <select name="category" value={userData.category} required onChange={handelChange}  id="category">
+                                            <option value="select category">Select Category</option>
                                                 {
                                                     categories.map((items, index)=>{
                                                         return(
@@ -78,6 +81,12 @@ export default function SignPage() {
                                                         )
                                                     })
                                                 }
+                                            </select>
+
+                                            <select name="shopType" value={userData.shopType} required onChange={handelChange}  id="shopType">
+                                                <option value="-select shop type-">Select Your Shop</option>
+                                                <option value="imap">imap</option>
+                                                <option value="imap2">imap2</option>
                                             </select>
                                         </div>
                                     </div>
@@ -96,6 +105,7 @@ export default function SignPage() {
                                         </div>
                                     </div>
                                     <div className="formSubimt">
+                                    <p className="error">{userInfoErr ? userInfoErr.response.data.error: ''}</p>
                                         <Button submit={handleSubmit} className='secondary-bttn' >
                                             Sign Up
                                         </Button>

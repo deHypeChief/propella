@@ -21,7 +21,8 @@ const userSchema = new mongoose.Schema({
     required: true
   },
   shopNumber: Number,
-  category: String
+  category: String,
+  shopType: String
 });
 
 export default mongoose.model('User', userSchema);

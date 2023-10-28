@@ -75,6 +75,7 @@
     position: absolute;
     height: 800px;
     width: 60%;
+    z-index: 20;
     /* overflow: hidden; */
 }
 
@@ -83,7 +84,6 @@
 .iphone{
     background: pink;
 }
-
 
 
 @media screen and (max-width: 600px) {
