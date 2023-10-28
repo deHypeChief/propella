@@ -35,17 +35,6 @@ const connectToMongoDB = () => {
 connectToMongoDB();
 
 const PORT = process.env.PORT || 3000;
-
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://site-propella.vercel.app');
-  next();
-});
-
-app.use(cors({
-  origin: 'https://site-propella.vercel.app',
-  allowedHeaders: 'Content-Type,Authorization', 
-}))
-
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 
