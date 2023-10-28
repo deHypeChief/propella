@@ -74,8 +74,8 @@ export function HomeNav() {
                 <div className="backHam">
                     <li>
                         <Link to={'/about'}>
-                            <p>About</p>
-                        </Link>``
+                            <p>About Us</p>
+                        </Link>
                     </li>
                     <li>
                         <Link to={'/investors'}>
@@ -179,7 +179,7 @@ export function OtherNav() {
                 <div className="backHam">
                     <li>
                         <Link to={'/about'}>
-                            <p>About</p>
+                            <p>About Us</p>
                         </Link>
                     </li>
                     <li>
