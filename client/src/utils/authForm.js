@@ -34,6 +34,7 @@ export async function createUsers(data, callback, callbackErr){
     })
         return callback(fetchData)
     } catch (error) {
+        alert('Error in creating your account, Try again')
         return callbackErr(error)
     }
     

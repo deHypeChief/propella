@@ -20,7 +20,7 @@ export default function SignPage() {
     const [userInfoErr, setInfoErr] = useState(null)
     const [userInfo, setInfo] = useState(null)
 
-    console.log(userData);
+    // console.log(userData);
 
     useEffect(()=>{
         getCategory(setCategories)
@@ -38,7 +38,7 @@ export default function SignPage() {
 
         createUsers(userData, setInfo, setInfoErr)
         alert(`${userInfo.data.data.username} \n You have been added to the waitlist`)
-        console.log(userInfo.data.data.username);
+        console.log(userInfo);
     }
 
     // console.log(categories);
