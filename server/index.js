@@ -19,7 +19,7 @@ const connectToMongoDB = () => {
 
   db.on('error', (error) => {
     console.error('MongoDB connection error:', error);
-    setTimeout(connectToMongoDB, 5000); // Attempt to reconnect every 5 seconds
+    setTimeout(connectToMongoDB, 10000);
   });
 
   db.once('open', () => {

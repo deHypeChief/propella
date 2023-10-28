@@ -4,13 +4,15 @@ import { OtherNav } from "../../components/navbar/navbar";
 
 export default function ValidPage(){
     return(
-        <section>
+         <>
             <OtherNav/>
+        <section>
             <h1>
                 Hello, <br />
                 Your account has being created
                 <Link to={'/'}><Button className='secondary-bttn'>Go Home</Button></Link>
             </h1>
         </section>
+        </>
     )
 }
