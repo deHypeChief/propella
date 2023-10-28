@@ -15,7 +15,7 @@ const DB_URL = process.env.NODE_ENV === 'production' ? process.env.DB_URL : proc
 
 // Function to establish MongoDB connection
 const connectToMongoDB = () => {
-  mongoose.connect('mongodb://localhost/your-database-name', {
+  mongoose.connect(DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
