@@ -112,6 +112,11 @@ const getCategory = async (req, res) => {
 	})
 }
 
+const users = async (req, res) => {
+	const getUsers = await User.find()
+	res.status(200).json(getUsers)
+}
+
 const signUser = async (req, res) => {
 	const { email, password } = req.body
 
