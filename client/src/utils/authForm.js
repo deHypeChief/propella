@@ -11,7 +11,9 @@ export async function getCategory(callback){
 
     try {
         const fetchData = await axios.get(API_URI, {
-        headers: {},
+        headers: {
+            
+        },
     })
 
         return callback(fetchData.data.category)
