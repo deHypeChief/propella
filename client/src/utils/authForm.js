@@ -32,8 +32,6 @@ export async function createUsers(data, callback, callbackErr){
             'Access-Control-Allow-Origin': 'https://site-propella.vercel.app',
         },
     })
-        alert(`${fetchData.name} \n You have been added to the waitlist`)
-
         return callback(fetchData)
     } catch (error) {
         return callbackErr(error)

@@ -37,7 +37,8 @@ export default function SignPage() {
         event.preventDefault()
 
         createUsers(userData, setInfo, setInfoErr)
-        console.log(userInfo);
+        alert(`${userInfo.data.data.username} \n You have been added to the waitlist`)
+        console.log(userInfo.data.data.username);
     }
 
     // console.log(categories);
