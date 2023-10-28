@@ -6,13 +6,14 @@ const URL = `https://propella-iota.vercel.app/api/users`
 const L_url = 'http://localhost:8080/api/users'
 console.log(URL);
 
+
 export async function getCategory(callback){
     const API_URI = `${URL}/categories`
 
     try {
         const fetchData = await axios.get(API_URI, {
         headers: {
-            
+            'Content-Type': 'application/json',
         },
     })
 
@@ -27,10 +28,11 @@ export async function createUsers(data, callback, callbackErr){
     const userData = data
     try {
         const fetchData = await axios.post(API_URI, userData, {
-        headers: {},
+        headers: {
+            'Content-Type': 'application/json',
+        },
     })
         alert(`${fetchData.name} \n You have been added to the waitlist`)
-
         return callback(fetchData)
     } catch (error) {
         return callbackErr(error)
