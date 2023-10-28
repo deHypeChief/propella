@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "../../components/button/button";
 import { OtherNav } from "../../components/navbar/navbar";
 import { createUsers, getCategory } from "../../utils/authForm";
+import { useNavigate } from "react-router-dom";
 
 
 export default function SignPage() {
@@ -19,9 +20,9 @@ export default function SignPage() {
     })
     const [userInfoErr, setInfoErr] = useState(null)
     const [userInfo, setInfo] = useState(null)
-
+    const navigate = useNavigate()
     // console.log(userData);
-
+                    
     useEffect(()=>{
         getCategory(setCategories)
     }, [])
@@ -36,9 +37,14 @@ export default function SignPage() {
     function handleSubmit(event){
         event.preventDefault()
 
-        createUsers(userData, setInfo, setInfoErr)
-        alert(`${userInfo.data.data.username} \n You have been added to the waitlist`)
-        console.log(userInfo);
+        createUsers(userData, setInfo, setInfoErr).then(()=>{
+            alert(`${userInfo.data.data.username} \n You have been added to the waitlist`)
+        
+            console.log(userInfo)
+        }).finally(()=>{
+            navigate('/onboarding/userCreated')
+        })
+        
     }
 
     // console.log(categories);

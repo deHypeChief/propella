@@ -9,6 +9,7 @@ import Investors from './pages/investors'
 import Auth from './pages/auth'
 import Roadmap from './pages/roadmap'
 import SignPage from './pages/authPages/signup'
+import ValidPage from './pages/authPages/validPage'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/onboarding'>
           <Route index element={<Auth/>}/>
           <Route path='signup' element={<SignPage/>}/>
+          <Route path='userCreated' element={<ValidPage/>}/>
         </Route>
         <Route path='/roadmap' element={<Roadmap/>}></Route>
       </Routes>
