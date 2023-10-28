@@ -39,6 +39,7 @@ const corsOptions = {
   origin: 'https://site-propella.vercel.app',
   methods: 'GET,POST',
   allowedHeaders: 'Content-Type,Authorization', 
+  preflightContinue: true,
 };
 
 // Define your routes here
