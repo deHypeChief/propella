@@ -35,6 +35,7 @@ const connectToMongoDB = () => {
 connectToMongoDB();
 
 const PORT = process.env.PORT || 3000;
+
 const corsOptions = {
   origin: 'https://site-propella.vercel.app',
   methods: 'GET,POST',
@@ -42,8 +43,15 @@ const corsOptions = {
   preflightContinue: true,
 };
 
-// Define your routes here
 app.use(cors(corsOptions))
+
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "https://site-propella.vercel.app");
+  res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  next();
+})
+
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 
