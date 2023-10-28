@@ -13,7 +13,7 @@ export async function getCategory(callback){
     try {
         const fetchData = await axios.get(API_URI, {
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Access-Control-Allow-Origin': 'https://site-propella.vercel.app',
         },
     })
 
@@ -29,7 +29,7 @@ export async function createUsers(data, callback, callbackErr){
     try {
         const fetchData = await axios.post(API_URI, userData, {
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Access-Control-Allow-Origin': 'https://site-propella.vercel.app',
         },
     })
         alert(`${fetchData.name} \n You have been added to the waitlist`)
