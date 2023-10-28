@@ -113,7 +113,7 @@ const getCategory = async (req, res) => {
 }
 
 const users = async (req, res) => {
-	const getUsers = await User.find()
+	const getUsers = await User.find().select('name email shopNumber shopType')
 	res.status(200).json(getUsers)
 }
 
@@ -141,4 +141,4 @@ const signUser = async (req, res) => {
 	})
 }
 
-export { createUser, getCategory, signUser }
+export { createUser, getCategory, signUser ,users}

@@ -1,5 +1,5 @@
 import express from 'express';
-import { connect } from 'mongoose';
+import mongoose, { connect } from 'mongoose';
 import dotenv from 'dotenv' 
 import cors from 'cors'
 
@@ -8,18 +8,33 @@ dotenv.config()
 
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 const DB_URL = process.env.NODE_ENV === 'production' ? process.env.DB_URL : process.env.DB_LOCAL
 
 
 
+// Function to establish MongoDB connection
+const connectToMongoDB = () => {
+  mongoose.connect('mongodb://localhost/your-database-name', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 
-connect(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.error(err));
+  const db = mongoose.connection;
 
+  db.on('error', (error) => {
+    console.error('MongoDB connection error:', error);
+    setTimeout(connectToMongoDB, 5000); // Attempt to reconnect every 5 seconds
+  });
 
+  db.once('open', () => {
+    console.log('Connected to MongoDB!');
+  });
+};
+
+connectToMongoDB();
+
+const PORT = process.env.PORT || 3000;
 
 // Define your routes here
 app.use(cors())
