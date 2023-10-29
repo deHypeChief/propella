@@ -90,35 +90,7 @@ export default function About() {
                         </p>
                     </div>
 
-                    <div className="spoil-slides">
-                        <div className="spoilWrap">
-
-                            <div id='slide1' className="slide">
-                                <div id="spoil1" className="slide-imgWrap slide-hover ">
-
-                                    <div className="slide-overlay">
-                                        <div className="slide-text">
-                                            <h1>
-                                                La Alpha Uno
-                                            </h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id='slide2' className="slide" >
-                                <div id="spoil2" className="slide-imgWrap no-slide-hover">
-
-                                </div>
-                            </div>
-
-                            <div id='slide3' className="slide" >
-                                <div id="spoil3" className="slide-imgWrap no-slide-hover">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {/* spoiies area */}
                 </div>
             </section>
 

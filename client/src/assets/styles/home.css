@@ -1,5 +1,5 @@
 .hero{
-    padding: 120px 0;
+    padding: 190px 0 120px;
     position: relative;
     overflow: hidden;
 }
@@ -84,7 +84,20 @@
 .iphone{
     background: pink;
 }
+.hero-wrap{
+    animation: fade 1.5s 0s ease forwards;
 
+}
+@keyframes fade {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .hero-bttnWrap{
@@ -92,8 +105,9 @@
     }
     
 
-    .protoype{
-        padding:80px 0px 100px;
+    .protoype {
+        padding: 6px 0px 88px;
+        margin-top: -89px;
     }
     .prototype-Background{
         height: 300px;
@@ -111,7 +125,7 @@
         justify-content: center;
     }
     .hero{
-        padding: 200px 0 0;
+        padding: 147px 0 0;
         /* padding-bottom: 60px; */
         height: 50vh;
     }

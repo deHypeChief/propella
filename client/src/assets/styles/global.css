@@ -75,6 +75,36 @@ option{
     border: none;
 }
 
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    z-index: 99;
+    position: fixed;
+}
+.loading img{
+    width: 250px;
+    animation: loading 4s  0ms  infinite ease;
+}
+@keyframes loading {
+    0%{
+        transform: rotateZ(0deg);
+        width: 160px;
+    }
+    50%{
+        transform: rotateZ(360deg);
+        width: 250px;
+    }
+    100%{
+        transform: rotateZ(0deg);
+        width: 160px;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     section {
         padding: 25px;
