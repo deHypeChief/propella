@@ -13,14 +13,18 @@ export default function Footer() {
                 <div className="footTextSec">
                     <div className="footerTop-text">
                         <h1 className="footerText-desktop">
-                            The Future <br /> Of E-commerce
+                        Connecting <br /> Leading Offline <br />
+ Marketplaces to <br />Propella
+
                         </h1>
                         <h1 className="footerText-mobile">
-                            The <br /> Future Of  <br />E-commerce
+                        Connecting Leading Offline
+ Marketplaces to Propella
+
                         </h1>
                     </div>
                     <div className="footerTop-bttn">
-                        <Button className="secondary-bttn">Work with us</Button>
+                        <Button className="secondary-bttn">Learn more</Button>
                     </div>
                 </div>
                 
@@ -39,7 +43,7 @@ export default function Footer() {
                             </p>
                             <div className="footer-quickLinks">
                                 <li>
-                                    <Link to={'/about'}>About Us</Link>
+                                    <Link to={'/about'}>Our Story</Link>
                                 </li>
                                 <li>
                                     <Link to={'/investors'}>Investor</Link>
@@ -48,7 +52,7 @@ export default function Footer() {
                                     <Link to={'/roadmap'}>Roadmap</Link>
                                 </li>
                                 <li>
-                                    <Link to={'/onboarding'}>Get Started</Link>
+                                    <Link to={'/onboarding'}>Legal</Link>
                                 </li>
                             </div>
                         </div>
@@ -58,13 +62,25 @@ export default function Footer() {
                                 Our Contacts
                             </p>
                             <div className="footer-contacts">
-                                <p>Big Apple Turn 22 str, London</p>
-                                <p>example@gmail.com</p>
+                                <p>Designed by FirstClassPilot.</p>
+                                <p>hi@propella.tech</p>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div className="footer_last" style={{
+                display: "flex",
+                justifyContent: "center"
+            }}>
+                <p>
+All rights reserved. 2023 Propella Technologies Limited 
+
+                </p>
+            </div>
         </footer>
     )
 }
+

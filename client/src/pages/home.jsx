@@ -51,11 +51,11 @@ export default function Home() {
                             <div className="hero-bttnWrap">
     
                                 <Link to='/about'>
-                                    <Button className='secondary-bttn'>About Us</Button>
+                                    <Button className='secondary-bttn'>Our Story</Button>
                                 </Link>
     
                                 <Link to='/investors'>
-                                    <Button className='secondary-bttn'>Investors</Button>
+                                    <Button className='secondary-bttn'>Become an Investor</Button>
                                 </Link>
     
                                 <Link to={'/roadmap'}>

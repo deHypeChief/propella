@@ -14,6 +14,7 @@ footer{
 .footer-Buttom{
     padding: 100px 140px 160px;
 }
+
 .footerTop-text{
     z-index: 6;
 }
@@ -58,6 +59,9 @@ footer{
 .footTextSec{
     z-index: 1;
 }
+.footer_last{
+    padding: 0px 140px 30px;
+}
 
 @media screen and (max-width: 600px) {
     .footer-quickLinks{
@@ -77,6 +81,9 @@ footer{
     }
     .footer-Buttom{
         padding: 30px 40px 100px;
+    }
+    .footer_last{
+        padding: 0px 40px 30px;
     }
     .footer-link{
         flex-direction: column;

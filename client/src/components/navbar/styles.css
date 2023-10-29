@@ -17,7 +17,7 @@ nav{
 }
 .navList{
     display: flex;
-    gap: 30px;
+    gap: 60px;
 }
 a:hover{
     color: var(--color-primary);

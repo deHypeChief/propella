@@ -74,12 +74,12 @@ export function HomeNav() {
                 <div className="backHam">
                     <li>
                         <Link to={'/about'}>
-                            <p>About Us</p>
+                            <p>Our Story</p>
                         </Link>
                     </li>
                     <li>
                         <Link to={'/investors'}>
-                            <p>Investors</p>
+                            <p>Become an Investor</p>
                         </Link>
                     </li>
                     <li>
@@ -144,10 +144,10 @@ export function OtherNav() {
 
                     <div className="navList">
                         <li>
-                            <Link to={'/about'}>About Us</Link>
+                            <Link to={'/about'}>Our Story</Link>
                         </li>
                         <li>
-                            <Link to={'/investors'}>Investors</Link>
+                            <Link to={'/investors'}>Become an Investor</Link>
                         </li>
                         <li>
                             <Link to={'/roadmap'}>Roadmap</Link>
