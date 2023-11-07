@@ -13,18 +13,19 @@ export default function Footer() {
                 <div className="footTextSec">
                     <div className="footerTop-text">
                         <h1 className="footerText-desktop">
-                        Connecting <br /> Leading Offline <br />
- Marketplaces to <br />Propella
+                        Invest in the <br /> future of African <br />E-commerce
 
                         </h1>
                         <h1 className="footerText-mobile">
-                        Connecting Leading Offline
- Marketplaces to Propella
+                        Invest in the future of African E-commerce
 
                         </h1>
                     </div>
                     <div className="footerTop-bttn">
-                        <Button className="secondary-bttn">Learn more</Button>
+                        <Button className="secondary-bttn">Allocate Capital Today</Button>
+                <br /><br />
+                <br /><br />
+                        <h2>rasied over $20000</h2>
                     </div>
                 </div>
                 
