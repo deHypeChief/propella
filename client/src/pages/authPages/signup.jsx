@@ -92,8 +92,8 @@ export default function SignPage() {
 
                                             <select name="shopType" value={userData.shopType} required onChange={handelChange}  id="shopType">
                                                 <option value="-select shop type-">Select Your Shop</option>
-                                                <option value="imap">imap</option>
-                                                <option value="imap2">imap2</option>
+                                                <option value="imap">Banex</option>
+                                                <option value="imap2">Emab</option>
                                             </select>
                                         </div>
                                     </div>
