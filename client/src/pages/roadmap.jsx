@@ -47,19 +47,19 @@ export default function Roadmap() {
             year: "Year 2023",
             month: "July ",
             detail: `Exclusive license secured for Emab plaza, Banex agreed on our operation snd potential exclusive license deal`,
-            imgUrl:""
+            imgUrl:"https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             year: "Year 2023",
             month: "August ",
             detail: `Registration agreed on our operation and potential exclusive license deal`,
-            imgUrl:""
+            imgUrl:"https://images.unsplash.com/photo-1462899006636-339e08d1844e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             year: "Year 2024",
             month: "January ",
             detail: `Operation to commence by 2024`,
-            imgUrl:""
+            imgUrl:"-https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
     ]
 
