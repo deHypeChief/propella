@@ -74,6 +74,57 @@
     background-position-y: -80vh;
 }
 
+.card{
+    background-size: cover;
+    border-radius: 30px;
+    align-items: flex-end;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 450px;
+    display: inline;
+}
+.ca-1{
+    background: url(https://images.unsplash.com/photo-1616400619175-5beda3a17896?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+
+}
+.cardOverlay{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,black, rgba(0, 0, 0, 0.145) );
+    position: absolute;
+    z-index: 1;
+
+}
+.card .header{
+    padding: 50px 60px;
+    position: absolute;
+    z-index: 2;
+}
+.card .header h2{
+    font-size: 5rem;
+}
+.card_info{
+    padding-top: 30px;
+    max-width: 400px;
+}
+
+.cardParent{
+    /* width: 100%; */
+    overflow-x: scroll;
+}
+/* .cardParent::-webkit-scrollbar{
+    display: none;
+} */
+.cardWrap{
+    display: flex;
+    gap: 40px;
+    width: fit-content;
+    
+
+}
 @media screen and (max-width:600px) {
     .roadmap-WrapText {
         flex-direction: column;

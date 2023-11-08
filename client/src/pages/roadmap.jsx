@@ -3,39 +3,17 @@ import { OtherNav } from "../components/navbar/navbar";
 import propStar from '../assets/icons/propella Star.svg'
 import Button from "../components/button/button";
 import '../assets/styles/roadmap.css'
-export default function Roadmap(){
-    return(
+export default function Roadmap() {
+    return (
         <>
-        <OtherNav/>
+            <OtherNav />
 
-        <section className="roadmap-Page">
+            <section className="roadmap-Page">
 
 
-                <div className="extras">
-                    <div className="bigStar-roadmap-">
-                        <img className='start1-roadmap- starRot' src={propStar} alt="" />
-                    </div>
-                </div>
 
 
                 <div className="roadmap-Wrap">
-
-                    <div className="roadmap--boximg">
-                        <div className="auttTopImg">
-                            <img src="" alt="" />
-                        </div>
-
-                        <div className="roadmap-Text">
-                            <div className="roadmap-TextWrap">
-                                <p className="textFact">
-                                    Did you know
-                                </p>
-                                <p className="justText">
-                                    A quick story about propella
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
 
                     <div className="roadmap-textArea">
@@ -61,16 +39,49 @@ export default function Roadmap(){
                 </div>
             </section>
 
+            <section className="roadmap-cards">
 
-        <section className="roadmap-bigtext">
-            <div className="btext-wrap">
-                <h1>
-                    We are built <br /> to <span className="bigColor">stand out</span> from the rest
-                </h1>
-            </div>
-        </section>
+                <div className="cardParent">
+                    <div className="cardWrap">
 
-        <Footer/>
+                        <div className="card ca-1">
+                            <div className="cardOverlay"></div>
+                            <div className="header">
+                                <p>2021</p>
+                                <h2>Nov - Dec</h2>
+                                <p className="card_info">
+                                    feasibility study and market research
+                                    about Propella product within Emab and Banx plaza Abuja.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div className="card ca-1">
+                            <div className="cardOverlay"></div>
+                            <div className="header">
+                                <p>2021</p>
+                                <h2>Nov - Dec</h2>
+                                <p className="card_info">
+                                    feasibility study and market research
+                                    about Propella product within Emab and Banx plaza Abuja.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section className="roadmap-bigtext">
+                <div className="btext-wrap">
+                    <h1>
+                        We are built <br /> to <span className="bigColor">stand out</span> from the rest
+                    </h1>
+                </div>
+            </section>
+
+            <Footer />
         </>
     )
 }
