@@ -171,6 +171,9 @@
         padding-bottom: 60px;
     }
 
+    .card {
+        height: 65vh;
+    }
     .card .header {
         padding: 30px;
         position: absolute;
