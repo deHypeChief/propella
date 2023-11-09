@@ -24,8 +24,7 @@ export default function Footer() {
                     <div className="footerTop-bttn">
                         <Button className="secondary-bttn">Allocate Capital Today</Button>
                 <br /><br />
-                <br /><br />
-                        <h2>rasied over $20000</h2>
+                        <h2>Rasied over $20000</h2>
                     </div>
                 </div>
                 

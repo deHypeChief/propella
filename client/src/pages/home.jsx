@@ -45,7 +45,7 @@ export default function Home() {
                                 <h1>I'm</h1>
                                 <h1>Propella</h1>
                                 <p className="hero-subtext">
-                                    Building the future of E-commerce & in Africa
+                                    Connecting high-end physical stores in Africa
                                 </p>
                             </div>
                             <div className="hero-bttnWrap">
