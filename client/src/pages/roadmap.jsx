@@ -100,9 +100,9 @@ export default function Roadmap() {
 
             <section className="roadmap-cards">
                 {
-                    roadmapjson.map((e)=>{
+                    roadmapjson.map((e, index)=>{
                         return(
-                            <div className="card ca-1" style={{
+                            <div className="card ca-1" key={index} style={{
                                 backgroundImage: `url(${e.imgUrl})`
                             }}>
                             <div className="cardOverlay"></div>
