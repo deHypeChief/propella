@@ -73,14 +73,14 @@ footer{
         color: white;
     }
     .footer-Top{
-        padding: 140px 40px 100px;
+        padding: 140px 30px 100px;
         background-position-x: -300px;
         background-position-y: 100px;
         background-size: cover;
         background-repeat: no-repeat;
     }
     .footer-Buttom{
-        padding: 30px 40px 100px;
+        padding: 30px 30px 100px;
     }
     .footer_last{
         padding: 0px 40px 30px;

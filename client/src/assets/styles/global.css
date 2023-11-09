@@ -36,9 +36,9 @@ body{
     --padding-spacing: 0 140px;
     color: black;
 }
-.roadYear{
-    /* color: #FF9900; */
-}
+/* .roadYear{
+    color: #FF9900; 
+} */
 section{
     padding: var(--padding-spacing);
 }

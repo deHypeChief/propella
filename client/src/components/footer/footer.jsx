@@ -17,7 +17,7 @@ export default function Footer() {
 
                         </h1>
                         <h1 className="footerText-mobile">
-                        Invest in the future of African E-commerce
+                        Invest in the <br /> future of African <br /> E-commerce
 
                         </h1>
                     </div>
