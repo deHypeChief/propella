@@ -6,7 +6,7 @@ const URL = `https://propella-iota.vercel.app/api/users`
 const L_url = 'http://localhost:8080/api/users'
 const option = {
     headers: {
-        'Access-Control-Allow-Origin': ['https://propella.tech', 'https://site-propella.vercel.app'],
+        'Access-Control-Allow-Origin': ['https://propella.tech','https://www.propella.tech', 'https://site-propella.vercel.app'],
     },
 }
 
