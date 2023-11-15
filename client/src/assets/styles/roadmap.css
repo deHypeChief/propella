@@ -133,9 +133,6 @@
     max-width: 600px;
     font-size: 1.7rem;
 }
-.card .header h2{
-    font-size: 7rem;
-}
 
 @media screen and (max-width:600px) {
     .roadmap-WrapText {
