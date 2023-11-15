@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Button from "../../components/button/button";
 import { OtherNav } from "../../components/navbar/navbar";
 
+import '../../assets/styles/auth.css'
+
 export default function ValidPage(){
     return(
          <>

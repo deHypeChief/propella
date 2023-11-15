@@ -4,18 +4,18 @@ const evn = import.meta.env.VITE_NODE_ENV;
 
 const URL = `https://propella-iota.vercel.app/api/users`
 const L_url = 'http://localhost:8080/api/users'
-console.log(URL);
+const options = {
+    headers: {
+        'Access-Control-Allow-Origin': ['https://site-propella.vercel.app', 'http://localhost:5173'],
+    },
+}
 
 
 export async function getCategory(callback){
     const API_URI = `${URL}/categories`
 
     try {
-        const fetchData = await axios.get(API_URI, {
-        headers: {
-            'Access-Control-Allow-Origin': 'https://site-propella.vercel.app',
-        },
-    })
+        const fetchData = await axios.get(API_URI, options)
 
         return callback(fetchData.data.category)
     } catch (error) {
@@ -27,11 +27,7 @@ export async function createUsers(data, callback, callbackErr){
     const API_URI = `${URL}/create`
     const userData = data
     try {
-        const fetchData = await axios.post(API_URI, userData, {
-        headers: {
-            'Access-Control-Allow-Origin': 'https://site-propella.vercel.app',
-        },
-    })
+        const fetchData = await axios.post(API_URI, userData, options)
         return callback(fetchData)
     } catch (error) {
         alert('Error in creating your account, Try again')

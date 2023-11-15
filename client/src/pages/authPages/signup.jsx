@@ -39,12 +39,10 @@ export default function SignPage() {
 
         createUsers(userData, setInfo, setInfoErr).then(()=>{
             alert(`${userInfo.data.data.username} \n You have been added to the waitlist`)
-        
+            
             console.log(userInfo)
-        }).finally(()=>{
             navigate('/onboarding/userCreated')
-        })
-        
+        })   
     }
 
     // console.log(categories);

@@ -88,6 +88,9 @@
     animation: fade 1.5s 0s ease forwards;
 
 }
+.ctaMobile{
+    display: none;
+}
 @keyframes fade {
     0%{
         transform: translateY(50px);
@@ -103,10 +106,14 @@
     .hero-bttnWrap{
         display: none;
     }
+    .ctaMobile{
+        display: flex;
+        padding-top: 30px;
+    }
     
 
     .protoype {
-        padding: 25px 0px 88px;
+        padding: 115px 0px 88px;
         margin-top: -20px;
     }
     .prototype-Background{

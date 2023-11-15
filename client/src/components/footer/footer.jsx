@@ -23,8 +23,14 @@ export default function Footer() {
                     </div>
                     <div className="footerTop-bttn">
                         <Button className="secondary-bttn">Allocate Capital Today</Button>
-                <br /><br />
+                <br /><br /><br />
                         <h2>Rasied over $20000</h2>
+
+                        <div className="raisedMeter">
+                            <div className="raisedBound">
+                                <div className="boundLine"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 

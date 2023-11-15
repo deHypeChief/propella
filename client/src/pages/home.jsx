@@ -47,7 +47,14 @@ export default function Home() {
                                 <p className="hero-subtext">
                                     Connecting high-end physical stores in Africa
                                 </p>
+                                <div className="ctaMobile">
+                                
+                            <Link to='/onboarding'>
+                                    <Button className='secondary-bttn'>Become a Vendor</Button>
+                                </Link>
                             </div>
+                            </div>
+                            
                             <div className="hero-bttnWrap">
     
                                 <Link to='/about'>
