@@ -32,7 +32,7 @@ connectToMongoDB();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin:  ['https://www.propella.tech/','https://site-propella.vercel.app', 'http://localhost:5173'],
+  origin:  ['https://propella.tech/','https://site-propella.vercel.app', 'http://localhost:5173'],
 }));
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
