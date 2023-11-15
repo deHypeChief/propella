@@ -1,5 +1,5 @@
 .hero{
-    padding: 190px 0 120px;
+    padding: 123px 0 120px;
     position: relative;
     overflow: hidden;
 }
@@ -9,10 +9,10 @@
     align-items: center;
 }
 .hero-subtext{
-    padding-top: 60px;
+    padding-top: 19px;
 }
 .hero-bttnWrap{
-    padding-top: 60px;
+    padding-top: 30px;
     display: flex;
     gap: 20px;
     justify-content: center;
